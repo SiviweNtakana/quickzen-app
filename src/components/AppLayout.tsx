@@ -1,8 +1,8 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { ShieldCheck, Sparkle } from "lucide-react";
+import { MessageCircle, ShieldCheck, Sparkle } from "lucide-react";
 import type { ReactNode } from "react";
 
-import { navItems, featureItems, settingsItem } from "@/lib/features";
+import { navItems, settingsItem } from "@/lib/features";
 import { cn } from "@/lib/utils";
 
 function SidebarLink({ to, title, icon: Icon }: { to: string; title: string; icon: typeof Sparkle }) {
