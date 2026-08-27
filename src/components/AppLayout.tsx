@@ -85,10 +85,11 @@ export function AppLayout({
 
       <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/90 px-2 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl lg:hidden">
         <div className="flex items-stretch justify-between">
-          {[navItems[0], ...featureItems.slice(0, 4)].map((item) => (
+          {navItems.slice(0, 5).map((item) => (
             <MobileTab key={item.to} to={item.to} label={item.short} icon={item.icon} />
           ))}
-          <MobileTab to="/chat" label="Chat" icon={featureItems[4].icon} />
+          <MobileTab to="/chat" label="Chat" icon={MessageCircle} />
+
         </div>
       </nav>
     </div>
