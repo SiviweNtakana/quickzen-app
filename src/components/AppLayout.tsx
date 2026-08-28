@@ -14,7 +14,7 @@ function SidebarLink({
   to: string;
   title: string;
   icon: typeof Sparkle;
-  onNavigate?: () => void;
+  onNavigate?: (() => void) | undefined;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const active = to === "/" ? pathname === "/" : pathname.startsWith(to);
