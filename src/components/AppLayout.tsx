@@ -35,7 +35,7 @@ function SidebarLink({
   );
 }
 
-function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
+function SidebarContent({ onNavigate }: { onNavigate?: (() => void) | undefined }) {
   return (
     <>
       <div className="flex items-center gap-3 px-2 py-3">
