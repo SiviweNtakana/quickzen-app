@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { MessageCircle, ShieldCheck, Sparkle } from "lucide-react";
-import type { ReactNode } from "react";
+import { Menu, ShieldCheck, Sparkle, X } from "lucide-react";
+import { useEffect, useState, type ReactNode } from "react";
 
 import { navItems, settingsItem } from "@/lib/features";
 import { cn } from "@/lib/utils";
